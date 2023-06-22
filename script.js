@@ -6,7 +6,7 @@ function rotateLine(){
 		rotation=rotation+5;
 		line.style.transform="rotate(${rotation}deg)";
 	}
-	setInterval(update, 100);
+	setInterval(update, 10);
 	
 }
 window.onload=rotateLine;
