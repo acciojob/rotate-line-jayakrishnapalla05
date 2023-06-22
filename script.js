@@ -3,5 +3,5 @@ let rotation =0;
 
 setInterval(() => {
 	rotation+=4;
-	line.style.transform = ` rotate(${rotation}deg`;
+	line.style.transform = `rotate(${rotation}deg`;
 },25);
