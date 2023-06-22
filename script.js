@@ -1,12 +1,6 @@
-//your JS code here. If required.
-function rotateLine(){
-	let rotation=0;
-	const line=document.getElementById("line");
-	function update(){
-		rotation=rotation+5;
-		line.style.transform="rotate(${rotation}deg)";
-	}
-	setInterval(update, 10);
-	
-}
-window.onload=rotateLine;
+const line = document.getElementById('line');
+let rotation=0;
+setInterval(() => {
+	rotation+= 5;
+	line.style.transform='translate(-50%, -50%) rotate(${rotation}deg)';
+},50);
